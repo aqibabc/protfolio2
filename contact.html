@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>AQIB ZAHID | Portfolio | Contact |</title>
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    ">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a class="navbar-brand fs-3" href="#" style="font-family: 'Fasthand', cursive;">AQIB ZAHID</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-5 me-2 mb-2 mb-lg-0">
+                        <li class=" nav-item">
+                            <a class="ms-5 nav-link " aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ms-5 nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ms-5 nav-link" href="./resume.html">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="ms-5 nav-link active" href="/contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="contact">
+            <div class="container bg-dark text-white my-3 p-3 opacity-50">
+                <div class="row">
+                    <div class="col">
+                        <h4>Contact</h4>
+                        <h1>Contact Me</h1>
+
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-6 mb-2">
+                                <div class="card w-100 bg-black text-white">
+                                    <div class="d-flex">
+                                        <div class="iconDiv p-3  mt-2 ms-2 rounded-circle h-25 bg-body-tertiary">
+                                            <i class="fa-solid fa-envelope" style="color: #18d26e;"></i>                                        </div>
+                                        <div class="icondetail ms-2">
+                                            <h3 class="mt-3">Email Address</h3>
+                                            <p>Contact.@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-6 mb-2">
+                                <div class="card w-100 bg-black text-white">
+                                    <div class="d-flex">
+                                        <div class="iconDiv p-3  mt-2 ms-2 rounded-circle h-25 bg-body-tertiary">
+                                            <i class="fa-solid fa-phone" style="color: #18d26e;"></i>                                        </div>
+                                        <div class="icondetail ms-2">
+                                            <h3 class="mt-3">Call Me</h3>
+                                            <p>+903267678244</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="bg-black mt-4 p-4">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 mb-2">
+                                    <input type="text" class="form-control" placeholder="First name"
+                                        aria-label="First name">
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <input type="text" class="form-control" placeholder="Last name"
+                                        aria-label="First name">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col my-2">
+                                    <input type="text" class="form-control" placeholder="Subject"
+                                        aria-label="Subject">
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col my-2">
+                                    <textarea name="" id="" class="w-100" rows="3" placeholder="Massege"></textarea>
+                                </div>
+                            </div>
+                            <div class="text-center ">
+                                <button class="btn btn-outline-success w-25">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-dark text-light">
+        <div id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <p class="pt-2">&copy; <span id="year"></span> All Right Reserved By AQIB ZAHID.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        let ear = new Date().getFullYear();
+        document.getElementById("year").innerHTML = ear;
+    </script>
+</body>
+
+</html>

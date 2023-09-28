@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>AQIB ZAHID | Portfolio | Home |</title>
+    <link rel="stylesheet" href="    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+    ">
+</head>
+<body>
+    <main>
+        <div id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="center text-white">
+                            <h1>AQIB ZAHID</h1>
+                            <div>
+
+                                <p class="mt-2">I'm a passionate <span id="typing-text" class="text-white">Full-Stack Developer</span> <span id="text-block">
+                                    from Pakistan
+                                </span></p>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item">
+                                    <a  class="text-white" href="./Index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="ms-2" href="./about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="ms-2" href="./resume.html">Resume</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a  class="ms-2" href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="icons d-flex">
+                                <div class="twitter p-3 my-3">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="facebook p-3 my-3 ms-3">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </div>
+                                <div class="instagram p-3 my-3 ms-3">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
+                                <div class="linkedin p-3 my-3 ms-3">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- <footer class="pt-0">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <p class="text-white text-center">&copy; All Right Reserved By AQIB ZAHID.</p>
+        </div>
+    </div>
+</div>
+    </footer> -->
+
+    <script type="module" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        const word = ['Web Designer', 'Frontend Developer', 'Video Editor', ' Developer', 'Full-Stack Developer'];
+        let i = 0;
+        let j = 0;
+        let isDeleting = false;
+        let typingInterval = 200;
+        let deletingInterval = 50;
+
+        function type() {
+            const typingText = document.getElementById('typing-text');
+            const currentWord = words[i];
+            const currentLetter = currentWord[j];
+
+            if (isDeleting) {
+                typingText.innerHTML = currentWord.substring(0, j - 1);
+                j--;
+
+                if (j === 0) {
+                    isDeleting = false;
+                    i = (i + 1) % words.length;
+                }
+            } else {
+                typingText.innerHTML = currentWord.substring(0, j + 1);
+                j++;
+
+                if (j === currentWord.length) {
+                    isDeleting = true;
+                }
+            }
+
+            const interval = isDeleting ? deletingInterval : typingInterval;
+            setTimeout(type, interval);
+        }
+
+        setTimeout(type, typingInterval);
+    </script>
+</body>
+
+</html>
